@@ -1,0 +1,40 @@
+﻿@model IEnumerable<IISLogAnalyzer.Parser.Models.LogEntryAggregate>
+
+@Html.Partial("_Upload")
+
+@Html.ActionLink("next page", "Analyze",
+    new { pageNum = ViewBag.pageNum + 1,
+        pageSize = ViewBag.pageSize,
+        filename = ViewBag.filename
+    }
+)
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IPAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DomainName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CallCount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IPAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DomainName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CallCount)
+        </td>        
+    </tr>
+}
+
+</table>
