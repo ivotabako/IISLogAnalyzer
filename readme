@@ -1,0 +1,7 @@
+IIS Log file analyzer.
+
+This program parses W3C Extended Log File Format (IIS 6.0).
+https://www.w3.org/TR/WD-logfile.html
+
+https://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/676400bc-8969-4aa7-851a-9319490a9bbb.mspx?mfr=true
+https://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/ffdd7079-47be-4277-921f-7a3a6e610dcb.mspx?mfr=true
